@@ -15,11 +15,11 @@ with NML; if not, write to the Free Software Foundation, Inc.,
 
 from nml import expression, nmlop, generic
 
-# Use feature 0x12 for towns (accessible via station/house/industry parent scope)
-varact2vars = 0x13 * [{}]
-varact2vars60x = 0x13 * [{}]
-# feature number:      0x00, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08, 0x09, 0x0A, 0x0B, 0x0C, 0x0D, 0x0E, 0x0F, 0x10, 0x11, 0x12
-varact2parent_scope = [0x00, 0x01, 0x02, 0x03, 0x12, None, 0x12, 0x12, None, 0x0A, 0x12, None, None, None, None, 0x12, None, None, None]
+# Use feature 0x15 for towns (accessible via station/house/industry parent scope)
+varact2vars = 0x16 * [{}]
+varact2vars60x = 0x16 * [{}]
+# feature number:      0x00, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08, 0x09, 0x0A, 0x0B, 0x0C, 0x0D, 0x0E, 0x0F, 0x10, 0x11, 0x12, 0x13, 0x14, 0x15
+varact2parent_scope = [0x00, 0x01, 0x02, 0x03, 0x13, None, 0x13, 0x13, None, 0x0A, 0x13, None, None, None, None, 0x13, None, None, None, None, 0x13, None]
 
 def default_60xvar(name, args, pos, info):
     """
@@ -686,6 +686,53 @@ varact2vars60x_airporttiles = {
 }
 
 #
+# Docks (feature 0x14)
+#
+
+varact2vars_docks = {
+    'relative_x'             : {'var': 0x40, 'start':  0, 'size':  8},
+    'relative_y'             : {'var': 0x40, 'start':  8, 'size':  8},
+    'relative_pos'           : {'var': 0x40, 'start':  0, 'size': 16},
+
+    'terrain_type'           : {'var': 0x41, 'start':  0, 'size':  3},
+    'tile_slope'             : {'var': 0x41, 'start':  8, 'size':  5},
+
+    'build_date'             : {'var': 0x42, 'start':  0, 'size': 32},
+
+    'animation_frame'        : {'var': 0x43, 'start':  0, 'size':  8},
+    'company_colour'         : {'var': 0x43, 'start':  0, 'size':  8},
+
+    'owner'                  : {'var': 0x44, 'start':  0, 'size':  8},
+
+    'town_manhattan_dist'    : {'var': 0x45, 'start':  0, 'size': 16},
+    'town_zone'              : {'var': 0x45, 'start': 16, 'size':  8},
+
+    'town_euclidean_dist'    : {'var': 0x46, 'start':  0, 'size': 32},
+    'view'                   : {'var': 0x48, 'start':  0, 'size':  8},
+    'random_bits'            : {'var': 0x5F, 'start':  8, 'size':  8},
+}
+
+varact2vars60x_docks = {
+    'nearby_tile_object_type'      : {'var': 0x60, 'start':  0, 'size': 16, 'param_function': signed_tile_offset},
+    'nearby_tile_object_view'      : {'var': 0x60, 'start': 16, 'size':  4, 'param_function': signed_tile_offset},
+
+    'nearby_tile_random_bits'      : {'var': 0x61, 'start':  0, 'size':  8, 'param_function': signed_tile_offset},
+
+    'nearby_tile_slope'            : {'var': 0x62, 'start':  0, 'size':  5, 'param_function': signed_tile_offset},
+    'nearby_tile_is_same_object'   : {'var': 0x62, 'start':  8, 'size':  1, 'param_function': signed_tile_offset},
+    'nearby_tile_is_water'         : {'var': 0x62, 'start':  9, 'size':  1, 'param_function': signed_tile_offset},
+    'nearby_tile_terrain_type'     : {'var': 0x62, 'start': 10, 'size':  3, 'param_function': signed_tile_offset},
+    'nearby_tile_water_class'      : {'var': 0x62, 'start': 13, 'size':  2, 'param_function': signed_tile_offset},
+    'nearby_tile_height'           : {'var': 0x62, 'start': 16, 'size':  8, 'param_function': signed_tile_offset},
+    'nearby_tile_class'            : {'var': 0x62, 'start': 24, 'size':  4, 'param_function': signed_tile_offset},
+
+    'nearby_tile_animation_frame'  : {'var': 0x63, 'start':  0, 'size':  8, 'param_function': signed_tile_offset},
+
+    'object_count'                 : {'var': 0x64, 'start': 16, 'size':  8, 'param_function': industry_count},
+    'object_distance'              : {'var': 0x64, 'start':  0, 'size': 16, 'param_function': industry_count},
+}
+
+#
 # Towns are not a true feature, but accessible via the parent scope of e.g. industries, stations
 #
 
@@ -730,4 +777,6 @@ varact2vars60x[0x0F] = varact2vars60x_objects
 varact2vars[0x10] = varact2vars_railtype
 varact2vars[0x11] = varact2vars_airporttiles
 varact2vars60x[0x11] = varact2vars60x_airporttiles
-varact2vars[0x12] = varact2vars_towns
+varact2vars[0x14] = varact2vars_docks
+varact2vars60x[0x14] = varact2vars60x_docks
+varact2vars[0x15] = varact2vars_towns

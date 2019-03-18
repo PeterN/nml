@@ -151,7 +151,7 @@ class Action0Property(BaseAction0Property):
 #
 # 'first' (value doesn't matter) if the property should be set first (generally a substitute type)
 
-properties = 0x12 * [None]
+properties = 0x15 * [None]
 
 #
 # Some helper functions that are used for multiple features
@@ -1021,4 +1021,38 @@ properties[0x11] = {
     'animation_info'     : {'size': 2, 'num': 0x0F, 'value_function': animation_info},
     'animation_speed'    : {'size': 1, 'num': 0x10},
     'animation_triggers' : {'size': 1, 'num': 0x11},
+}
+
+#
+# Feature 0x14 (Docks)
+#
+
+def dock_size(value):
+    if not isinstance(value, Array) or len(value.values) != 2:
+        raise generic.ScriptError("Dock size must be an array with exactly two values", value.pos)
+    sizex = value.values[0].reduce_constant()
+    sizey = value.values[1].reduce_constant()
+    if sizex.value < 1 or sizex.value > 15 or sizey.value < 1 or sizey.value > 15:
+        raise generic.ScriptError("The size of a dock must be at least 1x1 and at most 15x15 tiles", value.pos)
+    return [Action0Property(0x0C, ConstantNumeric(sizey.value << 4 | sizex.value), 1)]
+
+properties[0x14] = {
+    'class'                  : {'size': 4, 'num': 0x08, 'first': None, 'string_literal': 4},
+    # strings might be according to specs be either 0xD0 or 0xD4
+    'classname'              : {'size': 2, 'num': 0x09, 'string': 0xD0},
+    'name'                   : {'size': 2, 'num': 0x0A, 'string': 0xD0},
+    'climates_available'     : {'size': 1, 'num': 0x0B},
+    'size'                   : {'custom_function': dock_size}, # = prop 0C
+    'build_cost_multiplier'  : {'size': 1, 'num': 0x0D},
+    'introduction_date'      : {'size': 4, 'num': 0x0E},
+    'end_of_life_date'       : {'size': 4, 'num': 0x0F},
+    'object_flags'           : {'size': 2, 'num': 0x10},
+    'animation_info'         : {'size': 2, 'num': 0x11, 'value_function': animation_info},
+    'animation_speed'        : {'size': 1, 'num': 0x12},
+    'animation_triggers'     : {'size': 2, 'num': 0x13},
+    'remove_cost_multiplier' : {'size': 1, 'num': 0x14},
+    # 15 (callback flags) is not set by user
+    'height'                 : {'size': 1, 'num': 0x16},
+    'num_views'              : {'size': 1, 'num': 0x17},
+    'count_per_map256'       : {'size': 1, 'num': 0x18},
 }

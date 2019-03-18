@@ -15,7 +15,7 @@ with NML; if not, write to the Free Software Foundation, Inc.,
 
 from nml import expression, nmlop
 
-callbacks = 0x12 * [{}]
+callbacks = 0x15 * [{}]
 
 # Possible values for 'purchase':
 # 0 (or not set): not called from purchase list
@@ -274,4 +274,17 @@ callbacks[0x11] = {
     'anim_next_frame' : {'type': 'cb', 'num': 0x153, 'flag_bit': 0},
     'anim_speed'      : {'type': 'cb', 'num': 0x154, 'flag_bit': 1},
     'default'         : {'type': 'cargo', 'num': None},
+}
+
+# Docks
+callbacks[0x14] = {
+    'tile_check'      : {'type': 'cb', 'num': 0x157, 'flag_bit': 0, 'purchase': 2},
+    'anim_next_frame' : {'type': 'cb', 'num': 0x158, 'flag_bit': 1},
+    'anim_control'    : {'type': 'cb', 'num': 0x159},
+    'anim_speed'      : {'type': 'cb', 'num': 0x15A, 'flag_bit': 2},
+    'colour'          : {'type': 'cb', 'num': 0x15B, 'flag_bit': 3},
+    'additional_text' : {'type': 'cb', 'num': 0x15C, 'flag_bit': 4, 'purchase': 2},
+    'autoslope'       : {'type': 'cb', 'num': 0x15D, 'flag_bit': 5},
+    'default'         : {'type': 'cargo', 'num': None},
+    'purchase'        : {'type': 'cargo', 'num': 0xFF},
 }
