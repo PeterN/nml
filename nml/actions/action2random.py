@@ -85,6 +85,7 @@ random_types = {
     0x0F : {'SELF': {'type': 0x80, 'param': 0, 'first_bit': 0, 'num_bits':  8, 'triggers': False}},
     0x10 : {'SELF': {'type': 0x80, 'param': 0, 'first_bit': 0, 'num_bits':  2, 'triggers': False}},
     0x11 : {'SELF': {'type': 0x80, 'param': 0, 'first_bit': 0, 'num_bits': 16, 'triggers': False}, 'TILE': {'type': 0x80, 'first_bit': 16, 'num_bits': 4, 'triggers': False}},
+    0x14 : {'SELF': {'type': 0x80, 'param': 0, 'first_bit': 0, 'num_bits': 16, 'triggers': False}, 'TILE': {'type': 0x80, 'param': 0, 'first_bit': 16, 'num_bits': 4, 'triggers': False}},
 }
 
 
