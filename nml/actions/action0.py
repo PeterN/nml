@@ -204,6 +204,8 @@ used_ids = [
     BlockAllocation(  0,    255, "Object"),
     BlockAllocation(  0,     63, "Railtype"),
     BlockAllocation(  0,    255, "Airport Tile"),
+    BlockAllocation(  0,     -1, "Reserved"),
+    BlockAllocation(  0,     -1, "Reserved"),
     BlockAllocation(  0,    255, "Dock"),
 ]
 
