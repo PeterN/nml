@@ -5,7 +5,7 @@
 // Escapes: D= = DR D+ = DF D- = DC Du* = DM D* = DnF Du<< = DnC D<< = DO D& D| Du/ D/ Du% D%
 // Format: spritenum imagefile depth xpos ypos xsize ysize xrel yrel zoom flags
 
-0 * 4 \d4
+0 * 4 \d5
 
 1 * 54 14 "C" "INFO"
 "B" "VRSN" \w4 \dx00000000
@@ -26,4 +26,6 @@
 0F \wx0115
 
 4 * 23 04 03 7F 01 FF \wx0014 "Test plane 0x14" 00
+
+5 * 22 04 03 7E 01 FF \wx0014 "STR_NAME_PLANE" 00
 

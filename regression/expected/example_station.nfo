@@ -5,7 +5,7 @@
 // Escapes: D= = DR D+ = DF D- = DC Du* = DM D* = DnF Du<< = DnC D<< = DO D& D| Du/ D/ Du% D%
 // Format: spritenum imagefile depth xpos ypos xsize ysize xrel yrel zoom flags
 
-0 * 4 \d30
+0 * 4 \d32
 
 1 * 54 14 "C" "INFO"
 "B" "VRSN" \w4 \dx00000001
@@ -67,19 +67,23 @@
 
 20 * 18 04 04 FF 01 \wxC400 "NML Example" 00
 
-21 * 21 04 04 FF 01 \wxC500 "CHIPS Cow pens" 00
+21 * 25 04 04 FE 01 \wxC400 "STR_NAME_STATCLASS" 00
+
+22 * 21 04 04 FF 01 \wxC500 "CHIPS Cow pens" 00
+
+23 * 23 04 04 FE 01 \wxC500 "STR_NAME_STATION" 00
 
 // Name: cow_pen_half - feature 04
-22 * 7 02 04 FF \b0 \b1
+24 * 7 02 04 FF \b0 \b1
 
 \w1
 
 // Name: cow_pen_empty - feature 04
-23 * 7 02 04 FD \b0 \b1
+25 * 7 02 04 FD \b0 \b1
 
 \w0
 
-24 * 51 00 04 \b1 01 FF \wx0000
+26 * 51 00 04 \b1 01 FF \wx0000
 1A \b2
 \b65 \dx00000000 \wx0002 82
 \dx8000842D \wx0002 \b0 \b0 \b0 \b16 \b16 \b36 83
@@ -89,7 +93,7 @@
 // Name: Station Layout@registers - Id 00
 // a : register 80
 // a : register 81
-25 * 106 02 04 FC 89
+27 * 106 02 04 FC 89
 1A 20 \dx00000000
 \2sto 1A 20 \dx00000080
 \2r 1A 20 \dx00000000
@@ -108,7 +112,7 @@
 \wx8000 // Return computed value
 
 // Name: @action3_0
-26 * 31 02 04 FD 89
+28 * 31 02 04 FD 89
 7E FC 20 \dxFFFFFFFF 	// Station Layout@registers - Id 00
 \2r 10 00 \dx000000FF
 \b1
@@ -116,7 +120,7 @@
 \wx00FD // cow_pen_empty;
 
 // Name: @action3_1
-27 * 31 02 04 FE 89
+29 * 31 02 04 FE 89
 7E FC 20 \dxFFFFFFFF 	// Station Layout@registers - Id 00
 \2r 10 00 \dx000000FF
 \b1
@@ -124,7 +128,7 @@
 \wx00FE // random_cow_pen;
 
 // Name: @action3_2
-28 * 31 02 04 FF 89
+30 * 31 02 04 FF 89
 7E FC 20 \dxFFFFFFFF 	// Station Layout@registers - Id 00
 \2r 10 00 \dx000000FF
 \b1
@@ -132,14 +136,14 @@
 \wx00FF // cow_pen_half;
 
 // Name: @action3_3
-29 * 33 02 04 FF 89
+31 * 33 02 04 FF 89
 0C 00 \dx0000FFFF
 \b2
 \wx00FF \dx00000000 \dx00000000 	// @action3_2;
 \wx8000 \dx00000024 \dx00000024 	// return 0;
 \wx00FD // @action3_0;
 
-30 * 13 03 04 01 00 \b2
+32 * 13 03 04 01 00 \b2
 00 \wx00FE 	// @action3_1;
 FF \wx00FF 	// @action3_3;
 \wx00FD 	// @action3_0;

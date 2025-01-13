@@ -5,7 +5,7 @@
 // Escapes: D= = DR D+ = DF D- = DC Du* = DM D* = DnF Du<< = DnC D<< = DO D& D| Du/ D/ Du% D%
 // Format: spritenum imagefile depth xpos ypos xsize ysize xrel yrel zoom flags
 
-0 * 4 \d216
+0 * 4 \d218
 
 1 * 54 14 "C" "INFO"
 "B" "VRSN" \w4 \dx00000001
@@ -20,7 +20,11 @@
 
 4 * 199 04 13 FF 06 \wxDC12 "(Name 0x1B) Green Tram" 00 "(Toolbar Caption 0x09) Green Tram" 00 "(Menu Text 0x0A) Green Tram" 00 "(Build Window Caption 0x0B) Green Tram" 00 "(Autoreplace Text 0x0C) Green Tram" 00 "(New Engine Text 0x0D) Green Tram" 00
 
-5 * 52 00 12 \b10 01 FF \wx0005
+5 * 519 04 12 FE 12 \wxDC00 "STR_NAME_RED_ROAD" 00 "STR_TOOLBAR_CAPTION_RED_ROAD" 00 "STR_MENU_TEXT_RED_ROAD" 00 "STR_BUILD_WINDOW_CAPTION_RED_ROAD" 00 "STR_AUTOREPLACE_TEXT_RED_ROAD" 00 "STR_NEW_ENGINE_TEXT_RED_ROAD" 00 "STR_NAME_BLUE_ROAD" 00 "STR_TOOLBAR_CAPTION_BLUE_ROAD" 00 "STR_MENU_TEXT_BLUE_ROAD" 00 "STR_BUILD_WINDOW_CAPTION_BLUE_ROAD" 00 "STR_AUTOREPLACE_TEXT_BLUE_ROAD" 00 "STR_NEW_ENGINE_TEXT_BLUE_ROAD" 00 "STR_NAME_YELLOW_ROAD" 00 "STR_TOOLBAR_CAPTION_YELLOW_ROAD" 00 "STR_MENU_TEXT_YELLOW_ROAD" 00 "STR_BUILD_WINDOW_CAPTION_YELLOW_ROAD" 00 "STR_AUTOREPLACE_TEXT_YELLOW_ROAD" 00 "STR_NEW_ENGINE_TEXT_YELLOW_ROAD" 00
+
+6 * 181 04 13 FE 06 \wxDC12 "STR_NAME_GREEN_TRAM" 00 "STR_TOOLBAR_CAPTION_GREEN_TRAM" 00 "STR_MENU_TEXT_GREEN_TRAM" 00 "STR_BUILD_WINDOW_CAPTION_GREEN_TRAM" 00 "STR_AUTOREPLACE_TEXT_GREEN_TRAM" 00 "STR_NEW_ENGINE_TEXT_GREEN_TRAM" 00
+
+7 * 52 00 12 \b10 01 FF \wx0005
 1B \wxDC00
 08 "REDR"
 0F \b4 "BLUE" "REDR" "ROAD" "ELRD"
@@ -32,130 +36,130 @@
 10 01
 1A 65
 
-6 * 6 01 12 \b2 FF \wx0013
+8 * 6 01 12 \b2 FF \wx0013
 
-7 gfx/roads_red.png 8bpp 0 0 64 31 -31 0 normal
-8 gfx/roads_red.png 8bpp 75 0 64 31 -31 0 normal
-9 gfx/roads_red.png 8bpp 150 0 64 31 -31 0 normal
-10 gfx/roads_red.png 8bpp 225 0 64 31 -31 0 normal
-11 gfx/roads_red.png 8bpp 300 0 64 31 -31 0 normal
-12 gfx/roads_red.png 8bpp 375 0 64 31 -31 0 normal
-13 gfx/roads_red.png 8bpp 450 0 64 31 -31 0 normal
-14 gfx/roads_red.png 8bpp 0 40 64 31 -31 0 normal
-15 gfx/roads_red.png 8bpp 75 40 64 31 -31 0 normal
-16 gfx/roads_red.png 8bpp 150 40 64 31 -31 0 normal
-17 gfx/roads_red.png 8bpp 225 40 64 31 -31 0 normal
-18 gfx/roads_red.png 8bpp 300 40 64 39 -31 -8 normal
-19 gfx/roads_red.png 8bpp 375 40 64 21 -31 0 normal
-20 gfx/roads_red.png 8bpp 450 40 64 21 -31 0 normal
-21 gfx/roads_red.png 8bpp 525 40 64 39 -31 -8 normal
-22 gfx/roads_red.png 8bpp 0 80 64 31 -31 0 normal
-23 gfx/roads_red.png 8bpp 75 80 64 31 -31 0 normal
-24 gfx/roads_red.png 8bpp 150 80 64 31 -31 0 normal
-25 gfx/roads_red.png 8bpp 225 80 64 31 -31 0 normal
+9 gfx/roads_red.png 8bpp 0 0 64 31 -31 0 normal
+10 gfx/roads_red.png 8bpp 75 0 64 31 -31 0 normal
+11 gfx/roads_red.png 8bpp 150 0 64 31 -31 0 normal
+12 gfx/roads_red.png 8bpp 225 0 64 31 -31 0 normal
+13 gfx/roads_red.png 8bpp 300 0 64 31 -31 0 normal
+14 gfx/roads_red.png 8bpp 375 0 64 31 -31 0 normal
+15 gfx/roads_red.png 8bpp 450 0 64 31 -31 0 normal
+16 gfx/roads_red.png 8bpp 0 40 64 31 -31 0 normal
+17 gfx/roads_red.png 8bpp 75 40 64 31 -31 0 normal
+18 gfx/roads_red.png 8bpp 150 40 64 31 -31 0 normal
+19 gfx/roads_red.png 8bpp 225 40 64 31 -31 0 normal
+20 gfx/roads_red.png 8bpp 300 40 64 39 -31 -8 normal
+21 gfx/roads_red.png 8bpp 375 40 64 21 -31 0 normal
+22 gfx/roads_red.png 8bpp 450 40 64 21 -31 0 normal
+23 gfx/roads_red.png 8bpp 525 40 64 39 -31 -8 normal
+24 gfx/roads_red.png 8bpp 0 80 64 31 -31 0 normal
+25 gfx/roads_red.png 8bpp 75 80 64 31 -31 0 normal
+26 gfx/roads_red.png 8bpp 150 80 64 31 -31 0 normal
+27 gfx/roads_red.png 8bpp 225 80 64 31 -31 0 normal
 
-26 gfx/roads_underlay.png 8bpp 0 0 64 31 -31 0 normal
-27 gfx/roads_underlay.png 8bpp 75 0 64 31 -31 0 normal
-28 gfx/roads_underlay.png 8bpp 150 0 64 31 -31 0 normal
-29 gfx/roads_underlay.png 8bpp 225 0 64 31 -31 0 normal
-30 gfx/roads_underlay.png 8bpp 300 0 64 31 -31 0 normal
-31 gfx/roads_underlay.png 8bpp 375 0 64 31 -31 0 normal
-32 gfx/roads_underlay.png 8bpp 450 0 64 31 -31 0 normal
-33 gfx/roads_underlay.png 8bpp 0 40 64 31 -31 0 normal
-34 gfx/roads_underlay.png 8bpp 75 40 64 31 -31 0 normal
-35 gfx/roads_underlay.png 8bpp 150 40 64 31 -31 0 normal
-36 gfx/roads_underlay.png 8bpp 225 40 64 31 -31 0 normal
-37 gfx/roads_underlay.png 8bpp 300 40 64 39 -31 -8 normal
-38 gfx/roads_underlay.png 8bpp 375 40 64 23 -31 0 normal
-39 gfx/roads_underlay.png 8bpp 450 40 64 23 -31 0 normal
-40 gfx/roads_underlay.png 8bpp 525 40 64 39 -31 -8 normal
-41 gfx/roads_underlay.png 8bpp 0 80 64 31 -31 0 normal
-42 gfx/roads_underlay.png 8bpp 75 80 64 31 -31 0 normal
-43 gfx/roads_underlay.png 8bpp 150 80 64 31 -31 0 normal
-44 gfx/roads_underlay.png 8bpp 225 80 64 31 -31 0 normal
+28 gfx/roads_underlay.png 8bpp 0 0 64 31 -31 0 normal
+29 gfx/roads_underlay.png 8bpp 75 0 64 31 -31 0 normal
+30 gfx/roads_underlay.png 8bpp 150 0 64 31 -31 0 normal
+31 gfx/roads_underlay.png 8bpp 225 0 64 31 -31 0 normal
+32 gfx/roads_underlay.png 8bpp 300 0 64 31 -31 0 normal
+33 gfx/roads_underlay.png 8bpp 375 0 64 31 -31 0 normal
+34 gfx/roads_underlay.png 8bpp 450 0 64 31 -31 0 normal
+35 gfx/roads_underlay.png 8bpp 0 40 64 31 -31 0 normal
+36 gfx/roads_underlay.png 8bpp 75 40 64 31 -31 0 normal
+37 gfx/roads_underlay.png 8bpp 150 40 64 31 -31 0 normal
+38 gfx/roads_underlay.png 8bpp 225 40 64 31 -31 0 normal
+39 gfx/roads_underlay.png 8bpp 300 40 64 39 -31 -8 normal
+40 gfx/roads_underlay.png 8bpp 375 40 64 23 -31 0 normal
+41 gfx/roads_underlay.png 8bpp 450 40 64 23 -31 0 normal
+42 gfx/roads_underlay.png 8bpp 525 40 64 39 -31 -8 normal
+43 gfx/roads_underlay.png 8bpp 0 80 64 31 -31 0 normal
+44 gfx/roads_underlay.png 8bpp 75 80 64 31 -31 0 normal
+45 gfx/roads_underlay.png 8bpp 150 80 64 31 -31 0 normal
+46 gfx/roads_underlay.png 8bpp 225 80 64 31 -31 0 normal
 
 // Name: road_overlays_red - feature 12
-45 * 7 02 12 FF \b1 \b0
+47 * 7 02 12 FF \b1 \b0
 \w0
 
 
 // Name: track_underlays - feature 12
-46 * 7 02 12 FE \b1 \b0
+48 * 7 02 12 FE \b1 \b0
 \w1
 
 
-47 * 12 01 12 00 FF \wx0002 FF \wx0001 FF \wx0006
+49 * 12 01 12 00 FF \wx0002 FF \wx0001 FF \wx0006
 
-48 gfx/depot_normal.png 8bpp 200 10 16 8 17 11 normal
-49 gfx/depot_normal.png 8bpp 118 8 64 47 -1 -31 normal
-50 gfx/depot_normal.png 8bpp 0 10 16 8 -31 11 normal
-51 gfx/depot_normal.png 8bpp 37 8 64 47 -61 -31 normal
-52 gfx/depot_normal.png 8bpp 37 63 64 47 -61 -31 normal
-53 gfx/depot_normal.png 8bpp 118 63 64 47 -1 -31 normal
+50 gfx/depot_normal.png 8bpp 200 10 16 8 17 11 normal
+51 gfx/depot_normal.png 8bpp 118 8 64 47 -1 -31 normal
+52 gfx/depot_normal.png 8bpp 0 10 16 8 -31 11 normal
+53 gfx/depot_normal.png 8bpp 37 8 64 47 -61 -31 normal
+54 gfx/depot_normal.png 8bpp 37 63 64 47 -61 -31 normal
+55 gfx/depot_normal.png 8bpp 118 63 64 47 -1 -31 normal
 
 // Name: depot_normal_road - feature 12
-54 * 7 02 12 FD \b1 \b0
+56 * 7 02 12 FD \b1 \b0
 \w2
 
 
-55 * 12 01 12 00 FF \wx0003 FF \wx0001 FF \wx000B
+57 * 12 01 12 00 FF \wx0003 FF \wx0001 FF \wx000B
 
-56 gfx/roads_red.png 8bpp 0 0 64 31 -31 0 normal
-57 gfx/roads_red.png 8bpp 75 0 64 31 -31 0 normal
-58 gfx/roads_red.png 8bpp 300 40 64 39 -31 -8 normal
-59 gfx/roads_red.png 8bpp 375 40 64 23 -31 0 normal
-60 gfx/roads_red.png 8bpp 450 40 64 23 -31 0 normal
-61 gfx/roads_red.png 8bpp 525 40 64 39 -31 -8 normal
-62 gfx/roads_red.png 8bpp 150 0 64 31 -31 0 normal
-63 gfx/roads_red.png 8bpp 225 0 64 31 -31 0 normal
-64 gfx/roads_red.png 8bpp 300 0 64 31 -31 0 normal
-65 gfx/roads_red.png 8bpp 375 0 64 31 -31 0 normal
-66 gfx/roads_red.png 8bpp 450 0 64 31 -31 0 normal
+58 gfx/roads_red.png 8bpp 0 0 64 31 -31 0 normal
+59 gfx/roads_red.png 8bpp 75 0 64 31 -31 0 normal
+60 gfx/roads_red.png 8bpp 300 40 64 39 -31 -8 normal
+61 gfx/roads_red.png 8bpp 375 40 64 23 -31 0 normal
+62 gfx/roads_red.png 8bpp 450 40 64 23 -31 0 normal
+63 gfx/roads_red.png 8bpp 525 40 64 39 -31 -8 normal
+64 gfx/roads_red.png 8bpp 150 0 64 31 -31 0 normal
+65 gfx/roads_red.png 8bpp 225 0 64 31 -31 0 normal
+66 gfx/roads_red.png 8bpp 300 0 64 31 -31 0 normal
+67 gfx/roads_red.png 8bpp 375 0 64 31 -31 0 normal
+68 gfx/roads_red.png 8bpp 450 0 64 31 -31 0 normal
 
 // Name: bridge_underlay - feature 12
-67 * 7 02 12 FC \b1 \b0
+69 * 7 02 12 FC \b1 \b0
 \w3
 
 
-68 * 12 01 12 00 FF \wx0004 FF \wx0001 FF \wx0004
+70 * 12 01 12 00 FF \wx0004 FF \wx0001 FF \wx0004
 
-69 gfx/roads_red.png 8bpp 0 120 64 31 -31 0 normal
-70 gfx/roads_red.png 8bpp 75 120 64 31 -31 0 normal
-71 gfx/roads_red.png 8bpp 150 120 64 31 -31 0 normal
-72 gfx/roads_red.png 8bpp 225 120 64 31 -31 0 normal
+71 gfx/roads_red.png 8bpp 0 120 64 31 -31 0 normal
+72 gfx/roads_red.png 8bpp 75 120 64 31 -31 0 normal
+73 gfx/roads_red.png 8bpp 150 120 64 31 -31 0 normal
+74 gfx/roads_red.png 8bpp 225 120 64 31 -31 0 normal
 
 // Name: roadstop_underlay_red - feature 12
-73 * 7 02 12 FB \b1 \b0
+75 * 7 02 12 FB \b1 \b0
 \w4
 
 
-74 * 12 01 12 00 FF \wx0005 FF \wx0001 FF \wx0012
+76 * 12 01 12 00 FF \wx0005 FF \wx0001 FF \wx0012
 
-75 gfx/direction_markings.png 8bpp 34 8 24 16 -10 -9 normal
-76 gfx/direction_markings.png 8bpp 66 8 24 16 -13 -7 normal
-77 gfx/direction_markings.png 8bpp 98 8 24 16 -12 -8 normal
-78 gfx/direction_markings.png 8bpp 130 8 24 16 -15 -10 normal
-79 gfx/direction_markings.png 8bpp 162 8 24 16 -12 -9 normal
-80 gfx/direction_markings.png 8bpp 194 8 24 16 -11 -8 normal
-81 gfx/direction_markings.png 8bpp 34 40 24 16 -13 -10 normal
-82 gfx/direction_markings.png 8bpp 66 40 24 16 -12 -8 normal
-83 gfx/direction_markings.png 8bpp 98 40 24 16 -12 -9 normal
-84 gfx/direction_markings.png 8bpp 130 40 24 16 -11 -8 normal
-85 gfx/direction_markings.png 8bpp 162 40 24 16 -9 -10 normal
-86 gfx/direction_markings.png 8bpp 194 40 24 16 -10 -9 normal
-87 gfx/direction_markings.png 8bpp 34 72 24 16 -8 -11 normal
-88 gfx/direction_markings.png 8bpp 66 72 24 16 -11 -5 normal
-89 gfx/direction_markings.png 8bpp 98 72 24 16 -12 -8 normal
-90 gfx/direction_markings.png 8bpp 130 72 24 16 -12 -5 normal
-91 gfx/direction_markings.png 8bpp 162 72 24 16 -14 -10 normal
-92 gfx/direction_markings.png 8bpp 194 72 24 16 -12 -8 normal
+77 gfx/direction_markings.png 8bpp 34 8 24 16 -10 -9 normal
+78 gfx/direction_markings.png 8bpp 66 8 24 16 -13 -7 normal
+79 gfx/direction_markings.png 8bpp 98 8 24 16 -12 -8 normal
+80 gfx/direction_markings.png 8bpp 130 8 24 16 -15 -10 normal
+81 gfx/direction_markings.png 8bpp 162 8 24 16 -12 -9 normal
+82 gfx/direction_markings.png 8bpp 194 8 24 16 -11 -8 normal
+83 gfx/direction_markings.png 8bpp 34 40 24 16 -13 -10 normal
+84 gfx/direction_markings.png 8bpp 66 40 24 16 -12 -8 normal
+85 gfx/direction_markings.png 8bpp 98 40 24 16 -12 -9 normal
+86 gfx/direction_markings.png 8bpp 130 40 24 16 -11 -8 normal
+87 gfx/direction_markings.png 8bpp 162 40 24 16 -9 -10 normal
+88 gfx/direction_markings.png 8bpp 194 40 24 16 -10 -9 normal
+89 gfx/direction_markings.png 8bpp 34 72 24 16 -8 -11 normal
+90 gfx/direction_markings.png 8bpp 66 72 24 16 -11 -5 normal
+91 gfx/direction_markings.png 8bpp 98 72 24 16 -12 -8 normal
+92 gfx/direction_markings.png 8bpp 130 72 24 16 -12 -5 normal
+93 gfx/direction_markings.png 8bpp 162 72 24 16 -14 -10 normal
+94 gfx/direction_markings.png 8bpp 194 72 24 16 -12 -8 normal
 
 // Name: st_direction_markings - feature 12
-93 * 7 02 12 FA \b1 \b0
+95 * 7 02 12 FA \b1 \b0
 \w5
 
 
-94 * 25 03 12 01 05 \b6
+96 * 25 03 12 01 05 \b6
 01 \wx00FF 	// road_overlays_red;
 02 \wx00FE 	// track_underlays;
 06 \wx00FC 	// bridge_underlay;
@@ -164,7 +168,7 @@
 0B \wx00FA 	// st_direction_markings;
 \wx0000
 
-95 * 40 00 12 \b10 01 FF \wx0006
+97 * 40 00 12 \b10 01 FF \wx0006
 1B \wxDC06
 08 "BLUE"
 0F \b1 "ROAD"
@@ -176,46 +180,46 @@
 10 00
 1A 63
 
-96 * 12 01 12 00 FF \wx0006 FF \wx0001 FF \wx0013
+98 * 12 01 12 00 FF \wx0006 FF \wx0001 FF \wx0013
 
-97 gfx/roads_blue.png 8bpp 0 0 64 31 -31 0 normal
-98 gfx/roads_blue.png 8bpp 75 0 64 31 -31 0 normal
-99 gfx/roads_blue.png 8bpp 150 0 64 31 -31 0 normal
-100 gfx/roads_blue.png 8bpp 225 0 64 31 -31 0 normal
-101 gfx/roads_blue.png 8bpp 300 0 64 31 -31 0 normal
-102 gfx/roads_blue.png 8bpp 375 0 64 31 -31 0 normal
-103 gfx/roads_blue.png 8bpp 450 0 64 31 -31 0 normal
-104 gfx/roads_blue.png 8bpp 0 40 64 31 -31 0 normal
-105 gfx/roads_blue.png 8bpp 75 40 64 31 -31 0 normal
-106 gfx/roads_blue.png 8bpp 150 40 64 31 -31 0 normal
-107 gfx/roads_blue.png 8bpp 225 40 64 31 -31 0 normal
-108 gfx/roads_blue.png 8bpp 300 40 64 39 -31 -8 normal
-109 gfx/roads_blue.png 8bpp 375 40 64 21 -31 0 normal
-110 gfx/roads_blue.png 8bpp 450 40 64 21 -31 0 normal
-111 gfx/roads_blue.png 8bpp 525 40 64 39 -31 -8 normal
-112 gfx/roads_blue.png 8bpp 0 80 64 31 -31 0 normal
-113 gfx/roads_blue.png 8bpp 75 80 64 31 -31 0 normal
-114 gfx/roads_blue.png 8bpp 150 80 64 31 -31 0 normal
-115 gfx/roads_blue.png 8bpp 225 80 64 31 -31 0 normal
+99 gfx/roads_blue.png 8bpp 0 0 64 31 -31 0 normal
+100 gfx/roads_blue.png 8bpp 75 0 64 31 -31 0 normal
+101 gfx/roads_blue.png 8bpp 150 0 64 31 -31 0 normal
+102 gfx/roads_blue.png 8bpp 225 0 64 31 -31 0 normal
+103 gfx/roads_blue.png 8bpp 300 0 64 31 -31 0 normal
+104 gfx/roads_blue.png 8bpp 375 0 64 31 -31 0 normal
+105 gfx/roads_blue.png 8bpp 450 0 64 31 -31 0 normal
+106 gfx/roads_blue.png 8bpp 0 40 64 31 -31 0 normal
+107 gfx/roads_blue.png 8bpp 75 40 64 31 -31 0 normal
+108 gfx/roads_blue.png 8bpp 150 40 64 31 -31 0 normal
+109 gfx/roads_blue.png 8bpp 225 40 64 31 -31 0 normal
+110 gfx/roads_blue.png 8bpp 300 40 64 39 -31 -8 normal
+111 gfx/roads_blue.png 8bpp 375 40 64 21 -31 0 normal
+112 gfx/roads_blue.png 8bpp 450 40 64 21 -31 0 normal
+113 gfx/roads_blue.png 8bpp 525 40 64 39 -31 -8 normal
+114 gfx/roads_blue.png 8bpp 0 80 64 31 -31 0 normal
+115 gfx/roads_blue.png 8bpp 75 80 64 31 -31 0 normal
+116 gfx/roads_blue.png 8bpp 150 80 64 31 -31 0 normal
+117 gfx/roads_blue.png 8bpp 225 80 64 31 -31 0 normal
 
 // Name: road_overlays_blue - feature 12
-116 * 7 02 12 FB \b1 \b0
+118 * 7 02 12 FB \b1 \b0
 \w6
 
 
-117 * 12 01 12 00 FF \wx0007 FF \wx0001 FF \wx0004
+119 * 12 01 12 00 FF \wx0007 FF \wx0001 FF \wx0004
 
-118 gfx/roads_blue.png 8bpp 0 120 64 31 -31 0 normal
-119 gfx/roads_blue.png 8bpp 75 120 64 31 -31 0 normal
-120 gfx/roads_blue.png 8bpp 150 120 64 31 -31 0 normal
-121 gfx/roads_blue.png 8bpp 225 120 64 31 -31 0 normal
+120 gfx/roads_blue.png 8bpp 0 120 64 31 -31 0 normal
+121 gfx/roads_blue.png 8bpp 75 120 64 31 -31 0 normal
+122 gfx/roads_blue.png 8bpp 150 120 64 31 -31 0 normal
+123 gfx/roads_blue.png 8bpp 225 120 64 31 -31 0 normal
 
 // Name: roadstop_underlay_blue - feature 12
-122 * 7 02 12 FF \b1 \b0
+124 * 7 02 12 FF \b1 \b0
 \w7
 
 
-123 * 25 03 12 01 06 \b6
+125 * 25 03 12 01 06 \b6
 01 \wx00FB 	// road_overlays_blue;
 02 \wx00FE 	// track_underlays;
 06 \wx00FC 	// bridge_underlay;
@@ -224,7 +228,7 @@
 0B \wx00FA 	// st_direction_markings;
 \wx0000
 
-124 * 40 00 12 \b10 01 FF \wx0007
+126 * 40 00 12 \b10 01 FF \wx0007
 1B \wxDC0C
 08 "2YEL"
 0F \b1 "ROAD"
@@ -236,46 +240,46 @@
 10 00
 1A 64
 
-125 * 12 01 12 00 FF \wx0008 FF \wx0001 FF \wx0013
+127 * 12 01 12 00 FF \wx0008 FF \wx0001 FF \wx0013
 
-126 gfx/roads_yellow.png 8bpp 0 0 64 31 -31 0 normal
-127 gfx/roads_yellow.png 8bpp 75 0 64 31 -31 0 normal
-128 gfx/roads_yellow.png 8bpp 150 0 64 31 -31 0 normal
-129 gfx/roads_yellow.png 8bpp 225 0 64 31 -31 0 normal
-130 gfx/roads_yellow.png 8bpp 300 0 64 31 -31 0 normal
-131 gfx/roads_yellow.png 8bpp 375 0 64 31 -31 0 normal
-132 gfx/roads_yellow.png 8bpp 450 0 64 31 -31 0 normal
-133 gfx/roads_yellow.png 8bpp 0 40 64 31 -31 0 normal
-134 gfx/roads_yellow.png 8bpp 75 40 64 31 -31 0 normal
-135 gfx/roads_yellow.png 8bpp 150 40 64 31 -31 0 normal
-136 gfx/roads_yellow.png 8bpp 225 40 64 31 -31 0 normal
-137 gfx/roads_yellow.png 8bpp 300 40 64 39 -31 -8 normal
-138 gfx/roads_yellow.png 8bpp 375 40 64 21 -31 0 normal
-139 gfx/roads_yellow.png 8bpp 450 40 64 21 -31 0 normal
-140 gfx/roads_yellow.png 8bpp 525 40 64 39 -31 -8 normal
-141 gfx/roads_yellow.png 8bpp 0 80 64 31 -31 0 normal
-142 gfx/roads_yellow.png 8bpp 75 80 64 31 -31 0 normal
-143 gfx/roads_yellow.png 8bpp 150 80 64 31 -31 0 normal
-144 gfx/roads_yellow.png 8bpp 225 80 64 31 -31 0 normal
+128 gfx/roads_yellow.png 8bpp 0 0 64 31 -31 0 normal
+129 gfx/roads_yellow.png 8bpp 75 0 64 31 -31 0 normal
+130 gfx/roads_yellow.png 8bpp 150 0 64 31 -31 0 normal
+131 gfx/roads_yellow.png 8bpp 225 0 64 31 -31 0 normal
+132 gfx/roads_yellow.png 8bpp 300 0 64 31 -31 0 normal
+133 gfx/roads_yellow.png 8bpp 375 0 64 31 -31 0 normal
+134 gfx/roads_yellow.png 8bpp 450 0 64 31 -31 0 normal
+135 gfx/roads_yellow.png 8bpp 0 40 64 31 -31 0 normal
+136 gfx/roads_yellow.png 8bpp 75 40 64 31 -31 0 normal
+137 gfx/roads_yellow.png 8bpp 150 40 64 31 -31 0 normal
+138 gfx/roads_yellow.png 8bpp 225 40 64 31 -31 0 normal
+139 gfx/roads_yellow.png 8bpp 300 40 64 39 -31 -8 normal
+140 gfx/roads_yellow.png 8bpp 375 40 64 21 -31 0 normal
+141 gfx/roads_yellow.png 8bpp 450 40 64 21 -31 0 normal
+142 gfx/roads_yellow.png 8bpp 525 40 64 39 -31 -8 normal
+143 gfx/roads_yellow.png 8bpp 0 80 64 31 -31 0 normal
+144 gfx/roads_yellow.png 8bpp 75 80 64 31 -31 0 normal
+145 gfx/roads_yellow.png 8bpp 150 80 64 31 -31 0 normal
+146 gfx/roads_yellow.png 8bpp 225 80 64 31 -31 0 normal
 
 // Name: road_overlays_yellow - feature 12
-145 * 7 02 12 FF \b1 \b0
+147 * 7 02 12 FF \b1 \b0
 \w8
 
 
-146 * 12 01 12 00 FF \wx0009 FF \wx0001 FF \wx0004
+148 * 12 01 12 00 FF \wx0009 FF \wx0001 FF \wx0004
 
-147 gfx/roads_yellow.png 8bpp 0 120 64 31 -31 0 normal
-148 gfx/roads_yellow.png 8bpp 75 120 64 31 -31 0 normal
-149 gfx/roads_yellow.png 8bpp 150 120 64 31 -31 0 normal
-150 gfx/roads_yellow.png 8bpp 225 120 64 31 -31 0 normal
+149 gfx/roads_yellow.png 8bpp 0 120 64 31 -31 0 normal
+150 gfx/roads_yellow.png 8bpp 75 120 64 31 -31 0 normal
+151 gfx/roads_yellow.png 8bpp 150 120 64 31 -31 0 normal
+152 gfx/roads_yellow.png 8bpp 225 120 64 31 -31 0 normal
 
 // Name: roadstop_underlay_yellow - feature 12
-151 * 7 02 12 FB \b1 \b0
+153 * 7 02 12 FB \b1 \b0
 \w9
 
 
-152 * 25 03 12 01 07 \b6
+154 * 25 03 12 01 07 \b6
 01 \wx00FF 	// road_overlays_yellow;
 02 \wx00FE 	// track_underlays;
 06 \wx00FC 	// bridge_underlay;
@@ -284,7 +288,7 @@
 0B \wx00FA 	// st_direction_markings;
 \wx0000
 
-153 * 38 00 13 \b9 01 FF \wx0009
+155 * 38 00 13 \b9 01 FF \wx0009
 1B \wxDC12
 08 "GRTR"
 0F \b1 "TRAM"
@@ -295,92 +299,92 @@
 0D \wxDC17
 10 00
 
-154 * 6 01 13 \b2 FF \wx0013
+156 * 6 01 13 \b2 FF \wx0013
 
-155 gfx/tram_green.png 8bpp 0 0 64 31 -31 0 normal
-156 gfx/tram_green.png 8bpp 75 0 64 31 -31 0 normal
-157 gfx/tram_green.png 8bpp 150 0 64 31 -31 0 normal
-158 gfx/tram_green.png 8bpp 225 0 64 31 -31 0 normal
-159 gfx/tram_green.png 8bpp 300 0 64 31 -31 0 normal
-160 gfx/tram_green.png 8bpp 375 0 64 31 -31 0 normal
-161 gfx/tram_green.png 8bpp 450 0 64 31 -31 0 normal
-162 gfx/tram_green.png 8bpp 0 40 64 31 -31 0 normal
-163 gfx/tram_green.png 8bpp 75 40 64 31 -31 0 normal
-164 gfx/tram_green.png 8bpp 150 40 64 31 -31 0 normal
-165 gfx/tram_green.png 8bpp 225 40 64 31 -31 0 normal
-166 gfx/tram_green.png 8bpp 300 40 64 39 -31 -8 normal
-167 gfx/tram_green.png 8bpp 375 40 64 21 -31 0 normal
-168 gfx/tram_green.png 8bpp 450 40 64 21 -31 0 normal
-169 gfx/tram_green.png 8bpp 525 40 64 39 -31 -8 normal
-170 gfx/tram_green.png 8bpp 0 80 64 31 -31 0 normal
-171 gfx/tram_green.png 8bpp 75 80 64 31 -31 0 normal
-172 gfx/tram_green.png 8bpp 150 80 64 31 -31 0 normal
-173 gfx/tram_green.png 8bpp 225 80 64 31 -31 0 normal
+157 gfx/tram_green.png 8bpp 0 0 64 31 -31 0 normal
+158 gfx/tram_green.png 8bpp 75 0 64 31 -31 0 normal
+159 gfx/tram_green.png 8bpp 150 0 64 31 -31 0 normal
+160 gfx/tram_green.png 8bpp 225 0 64 31 -31 0 normal
+161 gfx/tram_green.png 8bpp 300 0 64 31 -31 0 normal
+162 gfx/tram_green.png 8bpp 375 0 64 31 -31 0 normal
+163 gfx/tram_green.png 8bpp 450 0 64 31 -31 0 normal
+164 gfx/tram_green.png 8bpp 0 40 64 31 -31 0 normal
+165 gfx/tram_green.png 8bpp 75 40 64 31 -31 0 normal
+166 gfx/tram_green.png 8bpp 150 40 64 31 -31 0 normal
+167 gfx/tram_green.png 8bpp 225 40 64 31 -31 0 normal
+168 gfx/tram_green.png 8bpp 300 40 64 39 -31 -8 normal
+169 gfx/tram_green.png 8bpp 375 40 64 21 -31 0 normal
+170 gfx/tram_green.png 8bpp 450 40 64 21 -31 0 normal
+171 gfx/tram_green.png 8bpp 525 40 64 39 -31 -8 normal
+172 gfx/tram_green.png 8bpp 0 80 64 31 -31 0 normal
+173 gfx/tram_green.png 8bpp 75 80 64 31 -31 0 normal
+174 gfx/tram_green.png 8bpp 150 80 64 31 -31 0 normal
+175 gfx/tram_green.png 8bpp 225 80 64 31 -31 0 normal
 
-174 gfx/roads_underlay.png 8bpp 0 0 64 31 -31 0 normal
-175 gfx/roads_underlay.png 8bpp 75 0 64 31 -31 0 normal
-176 gfx/roads_underlay.png 8bpp 150 0 64 31 -31 0 normal
-177 gfx/roads_underlay.png 8bpp 225 0 64 31 -31 0 normal
-178 gfx/roads_underlay.png 8bpp 300 0 64 31 -31 0 normal
-179 gfx/roads_underlay.png 8bpp 375 0 64 31 -31 0 normal
-180 gfx/roads_underlay.png 8bpp 450 0 64 31 -31 0 normal
-181 gfx/roads_underlay.png 8bpp 0 40 64 31 -31 0 normal
-182 gfx/roads_underlay.png 8bpp 75 40 64 31 -31 0 normal
-183 gfx/roads_underlay.png 8bpp 150 40 64 31 -31 0 normal
-184 gfx/roads_underlay.png 8bpp 225 40 64 31 -31 0 normal
-185 gfx/roads_underlay.png 8bpp 300 40 64 39 -31 -8 normal
-186 gfx/roads_underlay.png 8bpp 375 40 64 23 -31 0 normal
-187 gfx/roads_underlay.png 8bpp 450 40 64 23 -31 0 normal
-188 gfx/roads_underlay.png 8bpp 525 40 64 39 -31 -8 normal
-189 gfx/roads_underlay.png 8bpp 0 80 64 31 -31 0 normal
-190 gfx/roads_underlay.png 8bpp 75 80 64 31 -31 0 normal
-191 gfx/roads_underlay.png 8bpp 150 80 64 31 -31 0 normal
-192 gfx/roads_underlay.png 8bpp 225 80 64 31 -31 0 normal
+176 gfx/roads_underlay.png 8bpp 0 0 64 31 -31 0 normal
+177 gfx/roads_underlay.png 8bpp 75 0 64 31 -31 0 normal
+178 gfx/roads_underlay.png 8bpp 150 0 64 31 -31 0 normal
+179 gfx/roads_underlay.png 8bpp 225 0 64 31 -31 0 normal
+180 gfx/roads_underlay.png 8bpp 300 0 64 31 -31 0 normal
+181 gfx/roads_underlay.png 8bpp 375 0 64 31 -31 0 normal
+182 gfx/roads_underlay.png 8bpp 450 0 64 31 -31 0 normal
+183 gfx/roads_underlay.png 8bpp 0 40 64 31 -31 0 normal
+184 gfx/roads_underlay.png 8bpp 75 40 64 31 -31 0 normal
+185 gfx/roads_underlay.png 8bpp 150 40 64 31 -31 0 normal
+186 gfx/roads_underlay.png 8bpp 225 40 64 31 -31 0 normal
+187 gfx/roads_underlay.png 8bpp 300 40 64 39 -31 -8 normal
+188 gfx/roads_underlay.png 8bpp 375 40 64 23 -31 0 normal
+189 gfx/roads_underlay.png 8bpp 450 40 64 23 -31 0 normal
+190 gfx/roads_underlay.png 8bpp 525 40 64 39 -31 -8 normal
+191 gfx/roads_underlay.png 8bpp 0 80 64 31 -31 0 normal
+192 gfx/roads_underlay.png 8bpp 75 80 64 31 -31 0 normal
+193 gfx/roads_underlay.png 8bpp 150 80 64 31 -31 0 normal
+194 gfx/roads_underlay.png 8bpp 225 80 64 31 -31 0 normal
 
 // Name: tram_overlays_green - feature 13
-193 * 7 02 13 FA \b1 \b0
+195 * 7 02 13 FA \b1 \b0
 \w0
 
 
 // Name: track_underlays - feature 13
-194 * 7 02 13 FB \b1 \b0
+196 * 7 02 13 FB \b1 \b0
 \w1
 
 
-195 * 12 01 13 00 FF \wx0002 FF \wx0001 FF \wx0006
+197 * 12 01 13 00 FF \wx0002 FF \wx0001 FF \wx0006
 
-196 gfx/depot_normal.png 8bpp 200 10 16 8 17 11 normal
-197 gfx/depot_normal.png 8bpp 118 8 64 47 -1 -31 normal
-198 gfx/depot_normal.png 8bpp 0 10 16 8 -31 11 normal
-199 gfx/depot_normal.png 8bpp 37 8 64 47 -61 -31 normal
-200 gfx/depot_normal.png 8bpp 37 63 64 47 -61 -31 normal
-201 gfx/depot_normal.png 8bpp 118 63 64 47 -1 -31 normal
+198 gfx/depot_normal.png 8bpp 200 10 16 8 17 11 normal
+199 gfx/depot_normal.png 8bpp 118 8 64 47 -1 -31 normal
+200 gfx/depot_normal.png 8bpp 0 10 16 8 -31 11 normal
+201 gfx/depot_normal.png 8bpp 37 8 64 47 -61 -31 normal
+202 gfx/depot_normal.png 8bpp 37 63 64 47 -61 -31 normal
+203 gfx/depot_normal.png 8bpp 118 63 64 47 -1 -31 normal
 
 // Name: depot_normal_road - feature 13
-202 * 7 02 13 FD \b1 \b0
+204 * 7 02 13 FD \b1 \b0
 \w2
 
 
-203 * 12 01 13 00 FF \wx0003 FF \wx0001 FF \wx000B
+205 * 12 01 13 00 FF \wx0003 FF \wx0001 FF \wx000B
 
-204 gfx/roads_red.png 8bpp 0 0 64 31 -31 0 normal
-205 gfx/roads_red.png 8bpp 75 0 64 31 -31 0 normal
-206 gfx/roads_red.png 8bpp 300 40 64 39 -31 -8 normal
-207 gfx/roads_red.png 8bpp 375 40 64 23 -31 0 normal
-208 gfx/roads_red.png 8bpp 450 40 64 23 -31 0 normal
-209 gfx/roads_red.png 8bpp 525 40 64 39 -31 -8 normal
-210 gfx/roads_red.png 8bpp 150 0 64 31 -31 0 normal
-211 gfx/roads_red.png 8bpp 225 0 64 31 -31 0 normal
-212 gfx/roads_red.png 8bpp 300 0 64 31 -31 0 normal
-213 gfx/roads_red.png 8bpp 375 0 64 31 -31 0 normal
-214 gfx/roads_red.png 8bpp 450 0 64 31 -31 0 normal
+206 gfx/roads_red.png 8bpp 0 0 64 31 -31 0 normal
+207 gfx/roads_red.png 8bpp 75 0 64 31 -31 0 normal
+208 gfx/roads_red.png 8bpp 300 40 64 39 -31 -8 normal
+209 gfx/roads_red.png 8bpp 375 40 64 23 -31 0 normal
+210 gfx/roads_red.png 8bpp 450 40 64 23 -31 0 normal
+211 gfx/roads_red.png 8bpp 525 40 64 39 -31 -8 normal
+212 gfx/roads_red.png 8bpp 150 0 64 31 -31 0 normal
+213 gfx/roads_red.png 8bpp 225 0 64 31 -31 0 normal
+214 gfx/roads_red.png 8bpp 300 0 64 31 -31 0 normal
+215 gfx/roads_red.png 8bpp 375 0 64 31 -31 0 normal
+216 gfx/roads_red.png 8bpp 450 0 64 31 -31 0 normal
 
 // Name: bridge_underlay - feature 13
-215 * 7 02 13 FC \b1 \b0
+217 * 7 02 13 FC \b1 \b0
 \w3
 
 
-216 * 19 03 13 01 09 \b4
+218 * 19 03 13 01 09 \b4
 01 \wx00FA 	// tram_overlays_green;
 02 \wx00FB 	// track_underlays;
 06 \wx00FC 	// bridge_underlay;

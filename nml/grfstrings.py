@@ -347,6 +347,7 @@ class StringCommand:
     def __init__(self, name, str_pos, pos):
         assert name in commands or name in special_commands
         self.name = name
+        self.unique_name = self.name
         self.case = None
         self.arguments = []
         self.offset = None
