@@ -30,6 +30,7 @@ class String(Expression):
         if not isinstance(self.name, Identifier):
             raise generic.ScriptError("First parameter of string() must be an identifier.", pos)
         self.params = params[1:]
+        self.unique_name = '_'.join(x.unique_name if isinstance(x, String) else f'{x.value}' for x in params)
 
     def debug_print(self, indentation):
         generic.print_dbg(indentation, "String:")

@@ -5,7 +5,7 @@
 // Escapes: D= = DR D+ = DF D- = DC Du* = DM D* = DnF Du<< = DnC D<< = DO D& D| Du/ D/ Du% D%
 // Format: spritenum imagefile depth xpos ypos xsize ysize xrel yrel zoom flags
 
-0 * 4 \d39
+0 * 4 \d41
 
 1 * 54 14 "C" "INFO"
 "B" "VRSN" \w4 \dx00000001
@@ -20,48 +20,52 @@
 
 4 * 19 04 00 FF 01 \wxD002 "Company land" 00
 
+5 * 61 04 0F FE 02 \wxD000 "STR_NAME_OBJCLASS_INFRASTRUCTURE" 00 "STR_NAME_COMPANY_LAND" 00
+
+6 * 28 04 00 FE 01 \wxD002 "STR_NAME_COMPANY_LAND" 00
+
 // param[126] = param[161]
-5 * 5 0D 7E \D= A1 00
+7 * 5 0D 7E \D= A1 00
 
 // param[127] = (param[126] - 302012611)
-6 * 9 0D 7F \D- 7E FF \dx120058C3
+8 * 9 0D 7F \D- 7E FF \dx120058C3
 
 // param[127] = (param[127] << -31)
-7 * 9 0D 7F \Du<< 7F FF \dxFFFFFFE1
+9 * 9 0D 7F \Du<< 7F FF \dxFFFFFFE1
 
-8 * 9 09 7F 04 \7= \dx00000000 01
+10 * 9 09 7F 04 \7= \dx00000000 01
 
-9 * 19 0B 03 7F 06 "1.2.0 (r22723)" 00
+11 * 19 0B 03 7F 06 "1.2.0 (r22723)" 00
 
-10 * 6 01 0F \b1 FF \wx0013
+12 * 6 01 0F \b1 FF \wx0013
 
-11 cc_grid.png 8bpp 1 1 64 31 -31 0 normal
-12 cc_grid.png 8bpp 81 1 64 31 -31 0 normal
-13 cc_grid.png 8bpp 161 1 64 23 -31 0 normal
-14 cc_grid.png 8bpp 241 1 64 23 -31 0 normal
-15 cc_grid.png 8bpp 321 1 64 31 -31 0 normal
-16 cc_grid.png 8bpp 399 1 64 31 -31 0 normal
-17 cc_grid.png 8bpp 479 1 64 23 -31 0 normal
-18 cc_grid.png 8bpp 559 1 64 23 -31 0 normal
-19 cc_grid.png 8bpp 639 1 64 39 -31 -8 normal
-20 cc_grid.png 8bpp 719 1 64 39 -31 -8 normal
-21 cc_grid.png 8bpp 799 1 64 31 -31 -8 normal
-22 cc_grid.png 8bpp 879 1 64 31 -31 -8 normal
-23 cc_grid.png 8bpp 959 1 64 39 -31 -8 normal
-24 cc_grid.png 8bpp 1039 1 64 39 -31 -8 normal
-25 cc_grid.png 8bpp 1119 1 64 31 -31 -8 normal
-26 cc_grid.png 8bpp 1197 1 64 47 -31 -16 normal
-27 cc_grid.png 8bpp 1277 1 64 15 -31 0 normal
-28 cc_grid.png 8bpp 1357 1 64 31 -31 -8 normal
-29 cc_grid.png 8bpp 1437 1 64 31 -31 -8 normal
+13 cc_grid.png 8bpp 1 1 64 31 -31 0 normal
+14 cc_grid.png 8bpp 81 1 64 31 -31 0 normal
+15 cc_grid.png 8bpp 161 1 64 23 -31 0 normal
+16 cc_grid.png 8bpp 241 1 64 23 -31 0 normal
+17 cc_grid.png 8bpp 321 1 64 31 -31 0 normal
+18 cc_grid.png 8bpp 399 1 64 31 -31 0 normal
+19 cc_grid.png 8bpp 479 1 64 23 -31 0 normal
+20 cc_grid.png 8bpp 559 1 64 23 -31 0 normal
+21 cc_grid.png 8bpp 639 1 64 39 -31 -8 normal
+22 cc_grid.png 8bpp 719 1 64 39 -31 -8 normal
+23 cc_grid.png 8bpp 799 1 64 31 -31 -8 normal
+24 cc_grid.png 8bpp 879 1 64 31 -31 -8 normal
+25 cc_grid.png 8bpp 959 1 64 39 -31 -8 normal
+26 cc_grid.png 8bpp 1039 1 64 39 -31 -8 normal
+27 cc_grid.png 8bpp 1119 1 64 31 -31 -8 normal
+28 cc_grid.png 8bpp 1197 1 64 47 -31 -16 normal
+29 cc_grid.png 8bpp 1277 1 64 15 -31 0 normal
+30 cc_grid.png 8bpp 1357 1 64 31 -31 -8 normal
+31 cc_grid.png 8bpp 1437 1 64 31 -31 -8 normal
 
 // Name: company_land_layout - feature 0F
-30 * 31 02 0F FF \b66 \dx00000000 \wx0002 80
+32 * 31 02 0F FF \b66 \dx00000000 \wx0002 80
 \dxC0008000 \wx0002 \b0 \b0 80 00
 \dx00000000 \wx0002 \b0 \b0 80 81
 
 // Name: company_land_layout@registers - feature 0F
-31 * 62 02 0F FF 89
+33 * 62 02 0F FF 89
 7D 00 20 \dxFFFFFFFF
 \2+ 7D 01 20 \dxFFFFFFFF
 \2sto 1A 20 \dx00000080
@@ -73,17 +77,17 @@
 \wx00FF //
 
 // Name: @CB_FAILED_LAYOUT0F
-32 * 17 02 0F FE \b0 \dx00000000
+34 * 17 02 0F FE \b0 \dx00000000
 \dx00000000 \b0 \b0 \b0 \b0 \b0
 // Name: @CB_FAILED0F
-33 * 23 02 0F FE 89
+35 * 23 02 0F FE 89
 0C 00 \dx0000FFFF
 \b1
 \wx8000 \dx00000000 \dx00000000 	// graphics callback -> return 0
 \wx00FE // Non-graphics callback, return graphics result
 
 // Name: company_land_terrain_switch
-34 * 470 02 0F FD 89
+36 * 470 02 0F FD 89
 41 28 \dx0000001F
 \2cmp 1A 20 \dx0000001E
 \2& 1A 20 \dx00000001
@@ -152,7 +156,7 @@
 \wx00FF // default: company_land_layout;
 
 // Name: company_land_purchase_switch
-35 * 51 02 0F FF 89
+37 * 51 02 0F FF 89
 1A 20 \dx00000000
 \2sto 1A 20 \dx00000000
 \2r 1A 20 \dx00000F8D
@@ -162,7 +166,7 @@
 \wx00FE \dx00000001 \dx00000000 	// Bogus range to avoid nvar == 0
 \wx00FF // default: company_land_layout;
 
-36 * 43 00 0F \b12 01 FF \wx0000
+38 * 43 00 0F \b12 01 FF \wx0000
 08 "INFR"
 09 \wxD000
 0A \wxD001
@@ -176,11 +180,11 @@
 16 00
 17 01
 
-37 * 10 00 0F \b1 01 FF \wx0000
+39 * 10 00 0F \b1 01 FF \wx0000
 15 \wx0011
 
 // Name: @action3_0
-38 * 43 02 0F FF 89
+40 * 43 02 0F FF 89
 0C 00 \dx0000FFFF
 \b3
 \wx00FF \dx00000000 \dx00000000 	// company_land_purchase_switch;
@@ -188,7 +192,7 @@
 \wx8002 \dx0000015C \dx0000015C 	// return string(STR_NAME_COMPANY_LAND);
 \wx00FD // company_land_terrain_switch;
 
-39 * 10 03 0F 01 00 \b1
+41 * 10 03 0F 01 00 \b1
 FF \wx00FF 	// @action3_0;
 \wx00FD 	// company_land_terrain_switch;
 
