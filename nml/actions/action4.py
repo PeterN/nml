@@ -122,6 +122,7 @@ def get_global_string_actions():
         for feature_name, id in strings.items():
             feature, string_name = feature_name
             texts.append((0x7F, id, grfstrings.get_translation(string_name), feature))
+            texts.append((0x7E, id, string_name.unique_name, feature))
             for lang_id in grfstrings.get_translations(string_name):
                 texts.append((lang_id, id, grfstrings.get_translation(string_name, lang_id), feature))
 
@@ -129,7 +130,7 @@ def get_global_string_actions():
     last_id = -1
     last_feature = -1
     # Sort to have a deterministic ordering and to have as much consecutive IDs as possible
-    texts.sort(key=lambda text: (-1 if text[0] == 0x7F else text[0], text[1]))
+    texts.sort(key=lambda text: (-2 if text[0] == 0x7F else -1 if text[0] == 0x7E else text[0], text[1]))
 
     for text in texts:
         str_lang, str_id, str_text, feature = text
