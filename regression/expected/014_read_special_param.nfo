@@ -7,14 +7,16 @@
 
 0 * 4 \d20
 
-1 * 231 14 "C" "INFO"
+1 * 273 14 "C" "INFO"
 "B" "VRSN" \w4 \dx00000000
 "B" "MINV" \w4 \dx00000000
 "B" "NPAR" \w1 03
 "C" "PARA"
 "C" \d0
 "T" "NAME" 7F "Name of the int setting" 00
+"T" "NAME" 7E "STR_PARAM_NAME" 00
 "T" "DESC" 7F "Description of a setting" 00
+"T" "DESC" 7E "STR_PARAM_DESC" 00
 "B" "MASK" \w1 00
 "B" "LIMI" \w8 \d0 \d2
 "B" "DFLT" \w4 \dx00000000

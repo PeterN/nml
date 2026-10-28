@@ -117,6 +117,7 @@ class TextNode(Action14Node):
             size = 0
         else:
             size = 6 + grfstrings.get_string_size(grfstrings.get_translation(self.string))
+        size += 6 + grfstrings.get_string_size(self.string.unique_name)
         for lang_id in grfstrings.get_translations(self.string):
             # 6 is for "T" (1), id (4), langid (1)
             size += 6 + grfstrings.get_string_size(grfstrings.get_translation(self.string, lang_id))
@@ -128,6 +129,10 @@ class TextNode(Action14Node):
             file.print_bytex(0x7F)
             file.print_string(grfstrings.get_translation(self.string))
             file.newline()
+        self.write_type_id(file)
+        file.print_bytex(0x7E)
+        file.print_string(self.string.unique_name)
+        file.newline()
         for lang_id in grfstrings.get_translations(self.string):
             self.write_type_id(file)
             file.print_bytex(lang_id)

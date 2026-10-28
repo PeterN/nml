@@ -7,8 +7,10 @@
 
 0 * 4 \d123
 
-1 * 665 14 "C" "INFO"
+1 * 876 14 "C" "INFO"
+"T" "NAME" 7E "STR_GRF_NAME" 00
 "T" "NAME" 1F "NML Voorbeeld NewGRF: Trein" 00
+"T" "DESC" 7E "STR_GRF_DESC" 00
 "T" "DESC" 1F "\8ENML Voorbeeld NewGRF: Trein\0D\98Deze NewGRF is bedoeld als voorbeeld van de hogere NewGRF-programmeertaal NML.\0DOriginele graphics door \89Purno, \98geprogrammeerd door \89DJNekkid.\0D\98Deze NewGRF voegt een Nederlands treinstel toe, de ICM 'Koploper'." 00
 "B" "VRSN" \w4 \dx00000001
 "B" "MINV" \w4 \dx00000001
@@ -16,17 +18,22 @@
 "C" "PARA"
 "C" \d0
 "T" "NAME" 7F "Colour scheme" 00
+"T" "NAME" 7E "STR_PARAM_COLOUR_SCHEME_NAME" 00
 "T" "NAME" 1F "Kleurenschema" 00
 "T" "DESC" 7F "Select the type of colour scheme to use" 00
+"T" "DESC" 7E "STR_PARAM_COLOUR_SCHEME_DESC" 00
 "T" "DESC" 1F "Kies het soort kleurenschema" 00
 "B" "MASK" \w1 00
 "B" "LIMI" \w8 \d0 \d2
 "C" "VALU"
 "T" \d0 7F "One company colour" 00
+"T" \d0 7E "STR_PARAM_COLOUR_SCHEME_1CC" 00
 "T" \d0 1F "ÞEén bedrijfskleur" 00
 "T" \d1 7F "Two company colours" 00
+"T" \d1 7E "STR_PARAM_COLOUR_SCHEME_2CC" 00
 "T" \d1 1F "Twee bedrijfskleuren" 00
 "T" \d2 7F "Real-world colours" 00
+"T" \d2 7E "STR_PARAM_COLOUR_SCHEME_REAL" 00
 "T" \d2 1F "Realistische kleuren" 00
 00
 "B" "DFLT" \w4 \dx00000001

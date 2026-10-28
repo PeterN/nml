@@ -7,50 +7,66 @@
 
 0 * 4 \d3
 
-1 * 1254 14 "C" "INFO"
+1 * 1739 14 "C" "INFO"
 "B" "VRSN" \w4 \dx00000001
 "B" "MINV" \w4 \dx00000000
 "B" "NPAR" \w1 05
 "C" "PARA"
 "C" \d0
 "T" "NAME" 7F "Disable gridlines" 00
+"T" "NAME" 7E "STR_PARAM_NOGRID" 00
 "T" "DESC" 7F "This setting allows to replace all ground sprites such that the landscape is painted (mostly) without grid lines. Note that roads and train tracks don't yet follow this rule" 00
+"T" "DESC" 7E "STR_PARAM_NOGRID_DESC" 00
 "B" "TYPE" \w1 01
 "B" "MASK" \w3 \b0 \b0 \b1
 "B" "DFLT" \w4 \dx00000001
 00
 "C" \d1
 "T" "NAME" 7F "Replace the transmitter tower by a rock" 00
+"T" "NAME" 7E "STR_PARAM_TRANSMITTER" 00
 "T" "DESC" 7F "Enable to replace the transmitter tower by a rock (useful for early scenarios without telecomunication towers)" 00
+"T" "DESC" 7E "STR_PARAM_TRANSMITTER_DESC" 00
 "B" "TYPE" \w1 01
 "B" "MASK" \w3 \b0 \b1 \b1
 "B" "DFLT" \w4 \dx00000000
 00
 "C" \d2
 "T" "NAME" 7F "Landscape type" 00
+"T" "NAME" 7E "STR_PARAM_LANDSCAPE" 00
 "T" "DESC" 7F "Select the landscape (ground tile) type" 00
+"T" "DESC" 7E "STR_PARAM_LANDSCAPE_DESC" 00
 "B" "MASK" \w1 01
 "B" "LIMI" \w8 \d0 \d1
 "C" "VALU"
 "T" \d0 7F "normal (according to climate)" 00
+"T" \d0 7E "STR_PARAM_LANDSCAPE_NORMAL" 00
 "T" \d1 7F "alpine (temperate grass in arctic)" 00
+"T" \d1 7E "STR_PARAM_LANDSCAPE_ALPINE" 00
 "T" \d2 7F "temperate (not implemented)" 00
+"T" \d2 7E "STR_PARAM_LANDSCAPE_TEMPERATE" 00
 "T" \d3 7F "arctic (not implemented)" 00
+"T" \d3 7E "STR_PARAM_LANDSCAPE_ARCTIC" 00
 "T" \d4 7F "tropical (not implemented)" 00
+"T" \d4 7E "STR_PARAM_LANDSCAPE_TROPICAL" 00
 "T" \d5 7F "toyland (not implemented)" 00
+"T" \d5 7E "STR_PARAM_LANDSCAPE_TOYLAND" 00
 00
 "B" "DFLT" \w4 \dx00000000
 00
 "C" \d3
 "T" "NAME" 7F "Disable gridlines" 00
+"T" "NAME" 7E "STR_PARAM_NOGRID" 00
 "T" "DESC" 7F "This setting allows to replace all ground sprites such that the landscape is painted (mostly) without grid lines. Note that roads and train tracks don't yet follow this rule" 00
+"T" "DESC" 7E "STR_PARAM_NOGRID_DESC" 00
 "B" "TYPE" \w1 01
 "B" "MASK" \w3 \b2 \b0 \b1
 "B" "DFLT" \w4 \dx00000001
 00
 "C" \d4
 "T" "NAME" 7F "Replace the transmitter tower by a rock" 00
+"T" "NAME" 7E "STR_PARAM_TRANSMITTER" 00
 "T" "DESC" 7F "Enable to replace the transmitter tower by a rock (useful for early scenarios without telecomunication towers)" 00
+"T" "DESC" 7E "STR_PARAM_TRANSMITTER_DESC" 00
 "B" "TYPE" \w1 01
 "B" "MASK" \w3 \b2 \b1 \b1
 "B" "DFLT" \w4 \dx00000000
